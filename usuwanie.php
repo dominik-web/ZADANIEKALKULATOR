@@ -1,8 +1,4 @@
-<html>
-<head>
-<title>Usuwanie</title>
-</head>
-<body>
+
   <?php 
  
  
@@ -15,19 +11,4 @@ if($a == 'del' and !empty($ID_Klient)) {
     or die('Błąd zapytania: '.mysql_error()); 
  
     echo 'Rekord został usunęty z bazy'; 
- 
- 
- 
-    echo "</table>"; 
-  echo "<td> 
-<br /> <br />
-       <a href="index.php">powrut</a>  
- 
-       </td>"; 
-} 
- 
-?> 
- 
- 
-</body>
-</html>
+?/>
