@@ -11,4 +11,4 @@ if($a == 'del' and !empty($ID_Klient)) {
     or die('Błąd zapytania: '.mysql_error()); 
  
     echo 'Rekord został usunęty z bazy'; 
-/>
+?>
