@@ -1,12 +1,17 @@
-<?php 
+<html>
+<head>
+<title>Usuwanie</title>
+</head>
+<body>
+  <?php 
  
  
 $a = trim($_GET['a']); 
 $idu = trim($_GET['idu']); 
  
-if($a == 'del' and !empty($idu)) { 
+if($a == 'del' and !empty($ID_Klient)) { 
  
-    mysql_query("DELETE FROM 15-0302021-grupa3 WHERE idu='$idu'") 
+    mysql_query("DELETE FROM 15-03-2021-grupa3 WHERE idu='$idu'") 
     or die('Błąd zapytania: '.mysql_error()); 
  
     echo 'Rekord został usunęty z bazy'; 
@@ -22,3 +27,7 @@ if($a == 'del' and !empty($idu)) {
 } 
  
 ?> 
+ 
+ 
+</body>
+</html>
